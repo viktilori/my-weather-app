@@ -18,68 +18,79 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <form action="" class="search" id="search-form">
-        <button type="submit" id="submit-button">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+    <div class="wrapper">
+      <div class="container">
+        <form action="" class="search" id="search-form">
+          <button type="submit" id="submit-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
 
-        <input
-          type="text"
-          id="city"
-          placeholder="Enter the city"
-          autocomplete="off"
-        />
-        <button type="button" id="location-button">
-          <i class="fa-solid fa-location-arrow"></i>
-        </button>
-      </form>
-      <div class="cityName"><span>Kyiv</span>&nbsp;Ukraine</div>
-      <div class="middleSection">
-        <div class="currentTemp">
-          <span id="temperature">26</span>
-          <span class="mainDegrees">
-            <span id="celsius">&deg;C</span>
-            |
-            <span id="fahrenheit">&deg;F</span>
-          </span>
+          <input
+            type="text"
+            id="city"
+            placeholder="Enter the city"
+            autocomplete="off"
+          />
+          <button type="button" id="location-button">
+            <i class="fa-solid fa-location-arrow"></i>
+          </button>
+        </form>
+        <div class="cityName"><span>Kyiv</span>&nbsp;Ukraine</div>
+        <div class="middleSection">
+          <div class="currentTemp">
+            <span id="temperature">26</span>
+            <span class="mainDegrees">
+              <span id="celsius">&deg;C</span>
+              |
+              <span id="fahrenheit">&deg;F</span>
+            </span>
+          </div>
+          <div class="options">
+            <div class="condition" id="condition"></div>
+            <div class="wind"><i class="fa-solid fa-wind"></i>13mph</div>
+            <div class="rain"><i class="fa-solid fa-droplet"></i>0%</div>
+          </div>
         </div>
-        <div class="options">
-          <div class="condition" id="condition"></div>
-          <div class="wind"><i class="fa-solid fa-wind"></i>13mph</div>
-          <div class="rain"><i class="fa-solid fa-droplet"></i>0%</div>
+        <div id="date">Tuesday, 12:30</div>
+        <div class="mainImg">
+          <img src="img/partly-sunny.png" alt="Partly Sunny Weather" />
+        </div>
+        <div class="weekSection">
+          <div class="day">
+            <div>Sun</div>
+            <div class="weatherImg"><img src="img/cloudy.png" /></div>
+            <div class="degree"><span>27&deg;</span>&nbsp;20&deg;</div>
+          </div>
+          <div class="day">
+            <div>Mon</div>
+            <div class="weatherImg"><img src="img/sunny.png" /></div>
+            <div class="degree"><span>13&deg;</span>&nbsp;10&deg;</div>
+          </div>
+          <div class="day">
+            <div>Tue</div>
+            <div class="weatherImg"><img src="img/rainy.png" /></div>
+            <div class="degree"><span>-5&deg;</span>&nbsp;-10&deg;</div>
+          </div>
+          <div class="day">
+            <div>Wed</div>
+            <div class="weatherImg"><img src="img/stormy.png" /></div>
+            <div class="degree"><span>24&deg;</span>&nbsp;20&deg;</div>
+          </div>
+          <div class="day">
+            <div>Thu</div>
+            <div class="weatherImg"><img src="img/windy.png" /></div>
+            <div class="degree"><span>-30&deg;</span>&nbsp;-35&deg;</div>
+          </div>
         </div>
       </div>
-      <div id="date">Tuesday, 12:30</div>
-      <div class="mainImg">
-        <img src="img/partly-sunny.png" alt="Partly Sunny Weather" />
-      </div>
-      <div class="weekSection">
-        <div class="day">
-          <div>Sun</div>
-          <div class="weatherImg"><img src="img/cloudy.png" /></div>
-          <div class="degree"><span>27&deg;</span>&nbsp;20&deg;</div>
-        </div>
-        <div class="day">
-          <div>Mon</div>
-          <div class="weatherImg"><img src="img/sunny.png" /></div>
-          <div class="degree"><span>13&deg;</span>&nbsp;10&deg;</div>
-        </div>
-        <div class="day">
-          <div>Tue</div>
-          <div class="weatherImg"><img src="img/rainy.png" /></div>
-          <div class="degree"><span>-5&deg;</span>&nbsp;-10&deg;</div>
-        </div>
-        <div class="day">
-          <div>Wed</div>
-          <div class="weatherImg"><img src="img/stormy.png" /></div>
-          <div class="degree"><span>24&deg;</span>&nbsp;20&deg;</div>
-        </div>
-        <div class="day">
-          <div>Thu</div>
-          <div class="weatherImg"><img src="img/windy.png" /></div>
-          <div class="degree"><span>-30&deg;</span>&nbsp;-35&deg;</div>
-        </div>
+      <div class="code-link">
+        <a
+          href="https://github.com/viktilori/my-weather-app"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Open-source code</a
+        >
+        by Viktoriia Broiak
       </div>
     </div>
     <script src="js/index.js"></script>

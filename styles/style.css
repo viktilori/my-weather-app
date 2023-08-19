@@ -13,6 +13,19 @@ body {
   display: flex;
 }
 
+.wrapper {
+  /* height: 550px; */
+  /* width: 350px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-link {
+  padding-top: 15px;
+  font-family: "Yeseva One", cursive;
+}
+
 .container {
   background-color: white;
   height: 550px;
